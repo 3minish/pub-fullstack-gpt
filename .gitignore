@@ -172,5 +172,4 @@ cython_debug/
 
 
 .cache
-files
 .streamlit

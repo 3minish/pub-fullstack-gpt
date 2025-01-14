@@ -41,10 +41,10 @@ llm = ChatOpenAI(
 @st.cache_data(show_spinner="Embedding file...")
 def embed_file(file):
     file_content = file.read()
-    file_path = f"./streamlit_cache/files/{file.name}"
+    file_path = f"./streamlitcache/files/{file.name}"
     with open(file_path, "wb") as f:
         f.write(file_content)
-    cache_dir = LocalFileStore(f"./streamlit_cache/embeddings/{file.name}")
+    cache_dir = LocalFileStore(f"./streamlitcache/embeddings/{file.name}")
     splitter = CharacterTextSplitter.from_tiktoken_encoder(
         separator="\n",
         chunk_size=600,
