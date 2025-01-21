@@ -165,6 +165,8 @@ with st.sidebar:
         "Write down a URL",
         placeholder="https://example.com",
     )
+
+    st.write("https://github.com/3minish/pub-fullstack-gpt/commit/add9cd810f702ffd180c0ff3b38ea8047faa74ab")
     
 
 
