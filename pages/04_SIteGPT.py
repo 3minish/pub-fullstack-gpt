@@ -158,7 +158,8 @@ st.markdown(
 llm = ChatOpenAI(
     temperature=0.1,
 )
-llm.openai_api_key = st.text_input("text")
+keyapi = st.text_input("text")
+llm.openai_api_key = keyapi
 
 with st.sidebar:
     URL = st.text_input(
